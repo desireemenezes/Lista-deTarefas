@@ -1,7 +1,18 @@
 <template name="list">
-  <ul>
-    {{#each tarefas}}  <!--each quando for array-->
-    <li> {{ sabadoDesol }} </li>
-    {{/each}}
-  </ul>
+
+  <div class="row">
+    <div class="col-sm-12">
+      {{#each tarefas}}
+      <div class="row">
+        <div class="col-sm-11">
+       {{ sabadoDesol }} - {{ formataData }} 
+        </div>
+        <div class="col-sm-1">
+          <button class="btn btn-danger">Excluir</button>
+        </div>
+      </div>
+      <hr>
+      {{/each}}
+    </div>
+  </div>
 </template>
