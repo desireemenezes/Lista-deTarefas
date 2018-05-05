@@ -1,0 +1,1 @@
+# SingleApplication-meteor.js
