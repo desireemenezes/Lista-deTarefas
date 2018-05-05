@@ -1,8 +1,5 @@
 Template.list.helpers({
   tarefas: () => {
-    return [
-      {sabadoDesol: "Estudar meteor.js"},
-      {sabadoDesol: "Ir ao mercado"}
-    ];
+    return Tarefas.find({});
   }
 });
