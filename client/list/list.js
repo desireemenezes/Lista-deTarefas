@@ -7,3 +7,11 @@ Template.list.helpers({
     return moment(this.data).format('DD/MM/YYYY HH:mm');
   }
 });
+
+Template.list.events({
+  "click button" : function(e, template) {
+    const taskie = this;
+
+    Tarefas.remove({ _id : taskie._id });
+  }
+});
