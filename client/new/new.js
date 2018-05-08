@@ -1,12 +1,14 @@
 Template.new.events({
 
-  "submit form": function(e, template) {
+  'submit form': function(e, template) {
     e.preventDefault();
 
-    const input = $("#taskie");
-    const valorIput = input.val();
+    const input = $('#taskie');
+    const valorInput = input.val();
 
-    Tarefas.insert({sabadoDesol: valorIput, data: new Date()});
+    // não funciona mais agora pega dos methods direto no server
+    //Tarefas.insert({nome: valorIput, data: new Date()});
+    Meteor.call('adiciona', {sabadoDesol : valorInput});
     input.val("");
   },
 });
