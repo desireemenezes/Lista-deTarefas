@@ -1,17 +1,25 @@
 <head>
 </head>
 <body>
+  <header class="container">
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-      <a class="navbar-brand" href="#">Lista de Tarefas</a>
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">Lista de Tarefas</a>
+      </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav nav-rigth">
-
+        <ul class="nav navbar-nav navbar-right">
+          {{ > loginButtons }}
         </ul>
       </div>
     </nav>
+  </header>
 
     <main class="container">
-       {{ > new }}
-       {{ > list }}
+      {{#if currentUser}}
+          {{> new}}
+          {{> list}}
+      {{else}}
+        <div class="text-center"><strong>Você deve se logar primeiro!</strong></div>
+      {{/if}}
     </main>
 </body>
