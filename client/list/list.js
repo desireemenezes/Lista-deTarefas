@@ -12,7 +12,6 @@ Template.list.events({
 'click button' : function(e, template) {
     const tarefa = this;
 
-    //Tarefas.remove({ _id : taskie._id });
     Meteor.call('remove', tarefa._id);
   }
 });

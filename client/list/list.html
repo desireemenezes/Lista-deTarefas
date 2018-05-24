@@ -1,19 +1,17 @@
 <template name="list">
 
-  <div class="row">
-    <div class="col-sm-12">
       {{#each tarefas}}
       <div class="row">
-        <div class="col-sm-11">
-          {{ sabadoDesol }}
+        <div class="col-sm-11" id="descricao">
+            {{ descricao }}
         </div>
         <div class="col-sm-1">
-          <button class="btn btn-danger">Excluir</button>
+          <button type="button" class="btn btn-danger btn-sm">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
           <small class="blue">{{ formataData }}</small>
         </div>
       </div>
       <hr>
       {{/each}}
-    </div>
-  </div>
 </template>

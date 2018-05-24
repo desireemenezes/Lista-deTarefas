@@ -1,11 +1,12 @@
 Meteor.methods({
+  
   adiciona : (obj) => {
-    Tarefas.insert({sabadoDesol: obj.sabadoDesol, data: new Date(),
-                    usuario: this.userId})
+    Tarefas.insert({descricao: obj.descricao, data: new Date(),
+                    usuario: this.UserId})
   },
 
-  remove : (id) => {
-    Tarefas.remove({ _id : id, usuario: this.UserId });
+  remove : (tarefaId) => {
+    Tarefas.remove({ _id : tarefaId, usuario: this.UserId });
 
   }
 });

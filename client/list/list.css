@@ -1,4 +1,22 @@
 .btn-danger{
-  padding: 5px 5px;
-  border-radius: 15px 15px 15px 15px;
+  padding: 2px 2px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+.blue {
+  font-size: 12px;
+}
+
+#descricao {
+  font-size: 16px;
+  color: #b00020;
+}
+
+#color {
+  background-color: #b00020;
+}
+
+div {
+   /*border: 1px solid red;*/
 }

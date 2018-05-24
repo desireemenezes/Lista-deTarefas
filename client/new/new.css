@@ -2,6 +2,10 @@
    padding: 2px 5px;
 }
 
+label {
+font-size: 18px;
+}
+
 .blue {
   color: #2a6496;
 }
