@@ -1,11 +1,19 @@
 .btn-danger{
   padding: 2px 2px;
   border-radius: 10px 10px 10px 10px;
-  margin-left: 20px;
+  margin-left: 85px;
 }
 
-.blue {
+.dataHora {
   font-size: 12px;
+  margin-left: 60px;
+  color: #2a6496;
+}
+
+.btn-info{
+  padding: 2px 2px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 0px;
 }
 
 #descricao {
@@ -18,5 +26,5 @@
 }
 
 div {
-   /*border: 1px solid red;*/
+  /*border: 1px solid red;*/
 }

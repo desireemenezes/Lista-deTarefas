@@ -9,9 +9,9 @@ Template.list.helpers({
 });
 
 Template.list.events({
-'click button' : function(e, template) {
+'click #btn-remove' : function(e, template) {
     const tarefa = this;
 
     Meteor.call('remove', tarefa._id);
-  }
+  },
 });

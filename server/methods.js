@@ -7,6 +7,5 @@ Meteor.methods({
 
   remove : (tarefaId) => {
     Tarefas.remove({ _id : tarefaId, usuario: this.UserId });
-
   }
 });

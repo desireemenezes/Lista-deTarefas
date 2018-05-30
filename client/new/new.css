@@ -1,11 +1,12 @@
 #btn-mais {
-   padding: 2px 5px;
+   padding: 2px 4px;
+   font-size: 15px;
 }
 
 label {
 font-size: 18px;
 }
 
-.blue {
+.addTarefa {
   color: #2a6496;
 }
