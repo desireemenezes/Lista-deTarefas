@@ -2,10 +2,10 @@ Meteor.methods({
   
   adiciona : (obj) => {
     Tarefas.insert({descricao: obj.descricao, data: new Date(),
-                    usuario: this.UserId})
+                    usuario: Meteor.userId()})
   },
 
   remove : (tarefaId) => {
-    Tarefas.remove({ _id : tarefaId, usuario: this.UserId });
+    Tarefas.remove({ _id : tarefaId, usuario: Meteor.userId() });
   }
 });
